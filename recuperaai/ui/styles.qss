@@ -172,7 +172,7 @@ QLineEdit[placeholderText="Observação da revisão humana"] {
     min-width: 260px;
 }
 
-/* Etapa 11 — visual moderno com sidebar */
+/* Visual moderno com sidebar */
 QWidget {
     font-size: 13px;
 }
@@ -232,7 +232,7 @@ QLabel#sectionHint {
 }
 
 
-/* Etapa 11 — sidebar moderna e layout menos poluído */
+/* Sidebar moderna e layout menos poluído */
 QWidget#appRoot {
     background: #F6F8FC;
 }

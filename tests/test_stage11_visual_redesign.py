@@ -9,9 +9,9 @@ from recuperaai.build_info import version_label
 
 
 class Stage11VisualRedesignTests(unittest.TestCase):
-    def test_version_identifies_stage11(self):
-        self.assertIn('1.0.0-etapa11.0', version_label())
-        self.assertIn('Etapa 11', version_label())
+    def test_version_identifies_public_release(self):
+        self.assertIn('1.0.0', version_label())
+        self.assertIn('Production', version_label())
 
     def test_main_window_uses_sidebar_instead_of_top_level_tabs(self):
         text = Path('recuperaai/ui/main_window.py').read_text(encoding='utf-8')
@@ -56,11 +56,11 @@ class Stage11VisualRedesignTests(unittest.TestCase):
         ]:
             self.assertIn(selector, qss)
 
-    def test_visual_validation_uses_stage11_checklist_name(self):
+    def test_visual_validation_uses_public_checklist_name(self):
         validation = Path('recuperaai/validation/visual_validation.py').read_text(encoding='utf-8')
         build_ps1 = Path('scripts/build_windows.ps1').read_text(encoding='utf-8')
-        self.assertIn('Checklist de Validação Visual Etapa 11', validation)
-        self.assertIn('CHECKLIST_VALIDACAO_VISUAL_ETAPA11', build_ps1)
+        self.assertIn('Checklist de Validação Visual', validation)
+        self.assertIn('CHECKLIST_VALIDACAO_VISUAL', build_ps1)
         package_py = Path('scripts/package_windows_release.py').read_text(encoding='utf-8')
         self.assertIn('README.md', package_py)
         self.assertIn('ARCHITECTURE.md', package_py)

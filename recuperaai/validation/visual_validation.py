@@ -51,7 +51,7 @@ def _write_demo_files(base: Path) -> dict[str, Path]:
 def _write_checklist(path: Path, result: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     lines = [
-        "# RecuperaAI — Checklist de Validação Visual Etapa 11",
+        "# RecuperaAI — Checklist de Validação Visual",
         "",
         f"Versão: {result['version']}",
         f"Base local: `{result['base_dir']}`",
@@ -113,7 +113,7 @@ def prepare_visual_validation(base_dir: str | None = None, portable: bool = Fals
             "00.999.888/0001-77",
             "Responsável de Homologação",
             "validacao@recuperaai.local",
-            notes="Cliente criado automaticamente para validação visual guiada da Etapa 11.",
+            notes="Cliente criado automaticamente para validação visual guiada.",
         )
 
     # Contrato e documento podem ser duplicados em execuções repetidas; duplicidade é tratada como não fatal.
@@ -134,7 +134,7 @@ def prepare_visual_validation(base_dir: str | None = None, portable: bool = Fals
             pass
 
     workspace = engine.tool("clients").get_client_workspace(session, client.id)
-    checklist_path = Path(checklist_output).expanduser().resolve() if checklist_output else engine.paths.reports / "CHECKLIST_VALIDACAO_VISUAL_ETAPA11.md"
+    checklist_path = Path(checklist_output).expanduser().resolve() if checklist_output else engine.paths.reports / "CHECKLIST_VALIDACAO_VISUAL.md"
 
     result = {
         "ok": True,

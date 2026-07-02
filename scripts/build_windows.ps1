@@ -138,7 +138,7 @@ if (-not $SkipExeSmoke) {
     Write-Step "RecuperaAI: validacao operacional visual guiada"
     $visualDir = Join-Path $env:TEMP ("RecuperaAI_Visual_" + [guid]::NewGuid().ToString("N"))
     $visualOutputFile = Join-Path $env:TEMP ("RecuperaAI_EXE_Visual_" + [guid]::NewGuid().ToString("N") + ".json")
-    $visualChecklist = Join-Path $env:TEMP ("CHECKLIST_VALIDACAO_VISUAL_ETAPA11_" + [guid]::NewGuid().ToString("N") + ".md")
+    $visualChecklist = Join-Path $env:TEMP ("CHECKLIST_VALIDACAO_VISUAL_" + [guid]::NewGuid().ToString("N") + ".md")
     try {
         Invoke-Checked $cliExe @("--visual-check", "--base-dir", $visualDir, "--output-file", $visualOutputFile, "--checklist-output", $visualChecklist)
         if (!(Test-Path $visualOutputFile)) { throw "Validacao visual nao gravou saida: $visualOutputFile" }

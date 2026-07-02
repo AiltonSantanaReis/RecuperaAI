@@ -117,7 +117,7 @@ class LoggingDiagnosticsTests(unittest.TestCase):
             out_file = Path(tmp) / "versao.txt"
             code = main(["--version", "--output-file", str(out_file)])
             self.assertEqual(code, 0)
-            self.assertIn("RecuperaAI 1.0.0-etapa11.0", out_file.read_text(encoding="utf-8"))
+            self.assertIn("RecuperaAI 1.0.0", out_file.read_text(encoding="utf-8"))
 
     def test_cli_ignores_unknown_arguments_instead_of_exiting_code_2(self):
         with tempfile.TemporaryDirectory() as tmp:

@@ -6,7 +6,7 @@ if not exist logs mkdir logs >nul 2>nul
 for /f %%I in ('powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-Date -Format yyyyMMdd_HHmmss" 2^>nul') do set TS=%%I
 if not defined TS set TS=sem_data_%RANDOM%
 set VISUAL_LOG=%CD%\logs\validacao_visual_%TS%.log
-set CHECKLIST=%CD%\CHECKLIST_VALIDACAO_VISUAL_ETAPA11.md
+set CHECKLIST=%CD%\CHECKLIST_VALIDACAO_VISUAL.md
 set OUT_JSON=%CD%\logs\validacao_visual_%TS%.json
 
 set SOURCE_MODE=0
@@ -25,7 +25,7 @@ if not defined GUI_CMD if exist "%CD%\dist\RecuperaAI\RecuperaAI.exe" set GUI_CM
 if not defined GUI_CMD set GUI_CMD=!HEADLESS_CMD!
 
 echo ===============================================
-echo RecuperaAI - Validacao visual guiada Etapa 11
+echo RecuperaAI - Validacao visual guiada
 echo ===============================================
 echo Pasta: %CD%
 echo Comando diagnostico: %HEADLESS_CMD%
@@ -36,7 +36,7 @@ echo.
 
 (
   echo ===============================================
-  echo RecuperaAI - Validacao visual guiada Etapa 11
+  echo RecuperaAI - Validacao visual guiada
   echo Data/Hora: %date% %time%
   echo Pasta: %CD%
   echo Fonte detectada: %SOURCE_MODE%

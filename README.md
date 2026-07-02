@@ -6,7 +6,7 @@ RecuperaAI is designed for operational fiscal analysis teams that need to centra
 
 ## Status
 
-- Current application version: `1.0.0-etapa11.0`
+- Current application version: `1.0.0`
 - Primary platform: Windows desktop
 - Runtime: Python 3.11 to 3.14
 - UI framework: PySide6
@@ -137,7 +137,7 @@ Recommended release sequence:
 ```powershell
 .\.venv\Scripts\python.exe -m unittest discover -s tests
 git status --short
-git tag -a v1.0.0-etapa11.0 -m "RecuperaAI Desktop v1.0.0-etapa11.0"
+git tag -a v1.0.0 -m "RecuperaAI Desktop v1.0.0"
 git push origin main --tags
 ```
 
