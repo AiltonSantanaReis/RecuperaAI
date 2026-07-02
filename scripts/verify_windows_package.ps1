@@ -3,7 +3,7 @@ param(
 )
 $ErrorActionPreference = "Stop"
 if (-not $PackageZip) {
-    $latest = Get-ChildItem -Path "release" -Filter "RecuperaAI_Cliente_Teste_*.zip" -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+    $latest = Get-ChildItem -Path "release" -Filter "RecuperaAI_Desktop_*.zip" -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 1
     if (-not $latest) { throw "Nenhum pacote encontrado em release\. Informe -PackageZip." }
     $PackageZip = $latest.FullName
 }

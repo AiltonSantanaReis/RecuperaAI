@@ -20,6 +20,8 @@ CLI_EXE_NAME = "RecuperaAI_CLI.exe"
 
 def _safe_version_label() -> str:
     try:
+        if str(PROJECT_ROOT) not in sys.path:
+            sys.path.insert(0, str(PROJECT_ROOT))
         from recuperaai.build_info import APP_VERSION
         return APP_VERSION.replace(".", "_").replace("-", "_")
     except Exception:
@@ -80,7 +82,7 @@ def create_release_package(dist_dir: Path, output_dir: Path, skip_smoke: bool = 
 
     output_dir.mkdir(parents=True, exist_ok=True)
     version = _safe_version_label()
-    package_name = f"RecuperaAI_Cliente_Teste_{version}"
+    package_name = f"RecuperaAI_Desktop_{version}"
     package_root = output_dir / package_name
     if package_root.exists():
         shutil.rmtree(package_root)
@@ -100,7 +102,7 @@ def create_release_package(dist_dir: Path, output_dir: Path, skip_smoke: bool = 
             shutil.copy2(src, package_root / script_name)
 
     (package_root / "VERSAO.txt").write_text(
-        f"RecuperaAI - pacote de cliente\nGerado em: {datetime.now():%d/%m/%Y %H:%M:%S}\nVersão: {version}\n",
+        f"RecuperaAI Desktop\nGerado em: {datetime.now():%d/%m/%Y %H:%M:%S}\nVersão: {version}\n",
         encoding="utf-8",
     )
     write_manifest(package_root, packaged_app)
