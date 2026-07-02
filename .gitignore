@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local automation metadata
+.agents/
+.codex/
+
+# Local application data
+dados/
+data/
+storage/
+logs/
+output/
+
+# Build and release artifacts
+build/
+dist/
+release/
+*.spec.bak
+
+# Visual audits and generated screenshots
+visual_audit_*/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local diagnostics
+*.log

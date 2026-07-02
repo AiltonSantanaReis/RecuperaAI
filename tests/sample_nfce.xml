@@ -1,0 +1,19 @@
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe>
+    <infNFe Id="NFe35240212345678000190650010000000011000000019">
+      <ide>
+        <mod>65</mod><serie>1</serie><nNF>1</nNF><dhEmi>2024-02-01T10:00:00-03:00</dhEmi>
+      </ide>
+      <emit><CNPJ>12345678000190</CNPJ><xNome>Mercado NFCe Ltda</xNome></emit>
+      <det nItem="1">
+        <prod>
+          <cProd>789</cProd><xProd>Café</xProd><NCM>09012100</NCM><CEST>1709600</CEST><CFOP>5102</CFOP><uCom>UN</uCom><qCom>1.0000</qCom><vUnCom>25.50</vUnCom><vProd>25.50</vProd>
+        </prod>
+        <imposto><ICMS><ICMSSN102><orig>0</orig><CSOSN>102</CSOSN></ICMSSN102></ICMS><PIS><PISNT><CST>07</CST></PISNT></PIS></imposto>
+      </det>
+      <total><ICMSTot><vProd>25.50</vProd><vNF>25.50</vNF><vTotTrib>2.10</vTotTrib></ICMSTot></total>
+      <infNFeSupl><qrCode><![CDATA[https://sefaz.example/qrcode?p=35240212345678000190650010000000011000000019|2|1|1|ABC]]></qrCode></infNFeSupl>
+    </infNFe>
+  </NFe>
+  <protNFe><infProt><chNFe>35240212345678000190650010000000011000000019</chNFe></infProt></protNFe>
+</nfeProc>

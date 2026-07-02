@@ -1,0 +1,14 @@
+<cteProc xmlns="http://www.portalfiscal.inf.br/cte">
+  <CTe>
+    <infCte Id="CTe35240312345678000190570010000022221000022225">
+      <ide><mod>57</mod><serie>1</serie><nCT>2222</nCT><CFOP>5353</CFOP><natOp>Prestação de serviço de transporte</natOp><dhEmi>2024-03-05T08:15:00-03:00</dhEmi></ide>
+      <emit><CNPJ>12345678000190</CNPJ><xNome>Transportadora Exemplo Ltda</xNome></emit>
+      <rem><CNPJ>11111111000111</CNPJ><xNome>Remetente SA</xNome></rem>
+      <dest><CNPJ>22222222000122</CNPJ><xNome>Destinatário SA</xNome></dest>
+      <vPrest><vTPrest>800.00</vTPrest><vRec>800.00</vRec></vPrest>
+      <imp><ICMS><ICMS00><CST>00</CST><vBC>800.00</vBC><pICMS>12.00</pICMS><vICMS>96.00</vICMS></ICMS00></ICMS><vTotTrib>96.00</vTotTrib></imp>
+      <infCTeNorm><infCarga><vCarga>5000.00</vCarga><proPred>Mercadorias diversas</proPred></infCarga></infCTeNorm>
+    </infCte>
+  </CTe>
+  <protCTe><infProt><chCTe>35240312345678000190570010000022221000022225</chCTe></infProt></protCTe>
+</cteProc>

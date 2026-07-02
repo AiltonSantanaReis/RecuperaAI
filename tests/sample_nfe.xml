@@ -1,0 +1,12 @@
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe>
+    <infNFe Id="NFe35240112345678000190550010000012341000012345">
+      <ide><mod>55</mod><serie>1</serie><nNF>1234</nNF><dhEmi>2024-01-10T09:30:00-03:00</dhEmi></ide>
+      <emit><CNPJ>12345678000190</CNPJ><xNome>Fornecedor Exemplo Ltda</xNome></emit>
+      <dest><CNPJ>00999888000177</CNPJ><xNome>Cliente Exemplo SA</xNome></dest>
+      <det nItem="1"><prod><cProd>A1</cProd><xProd>Produto A</xProd><NCM>12345678</NCM><CFOP>5102</CFOP><qCom>2.0000</qCom><vUnCom>50.00</vUnCom><vProd>100.00</vProd></prod><imposto><ICMS><ICMS00><vICMS>18.00</vICMS></ICMS00></ICMS><PIS><PISAliq><vPIS>1.65</vPIS></PISAliq></PIS><COFINS><COFINSAliq><vCOFINS>7.60</vCOFINS></COFINSAliq></COFINS></imposto></det>
+      <det nItem="2"><prod><cProd>B1</cProd><xProd>Produto B</xProd><NCM>87654321</NCM><CFOP>5102</CFOP><qCom>1.0000</qCom><vUnCom>50.00</vUnCom><vProd>50.00</vProd></prod></det>
+      <total><ICMSTot><vProd>150.00</vProd><vICMS>18.00</vICMS><vPIS>1.65</vPIS><vCOFINS>7.60</vCOFINS><vNF>150.00</vNF></ICMSTot></total>
+    </infNFe>
+  </NFe>
+</nfeProc>

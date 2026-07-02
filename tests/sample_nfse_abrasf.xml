@@ -1,0 +1,39 @@
+<CompNfse xmlns="http://www.abrasf.org.br/nfse.xsd">
+  <Nfse>
+    <InfNfse Id="NFSe-9001">
+      <Numero>9001</Numero>
+      <CodigoVerificacao>AB12CD</CodigoVerificacao>
+      <DataEmissao>2024-04-15T14:20:00</DataEmissao>
+      <ValoresNfse>
+        <BaseCalculo>1200.00</BaseCalculo>
+        <Aliquota>0.05</Aliquota>
+        <ValorIss>60.00</ValorIss>
+        <ValorLiquidoNfse>1140.00</ValorLiquidoNfse>
+      </ValoresNfse>
+      <DeclaracaoPrestacaoServico>
+        <InfDeclaracaoPrestacaoServico>
+          <Servico>
+            <Valores>
+              <ValorServicos>1200.00</ValorServicos>
+              <ValorDeducoes>0.00</ValorDeducoes>
+              <ValorPis>7.80</ValorPis>
+              <ValorCofins>36.00</ValorCofins>
+              <ValorIss>60.00</ValorIss>
+            </Valores>
+            <ItemListaServico>0107</ItemListaServico>
+            <CodigoTributacaoMunicipio>6201501</CodigoTributacaoMunicipio>
+            <Discriminacao>Desenvolvimento de software sob encomenda</Discriminacao>
+          </Servico>
+          <Prestador>
+            <CpfCnpj><Cnpj>12345678000190</Cnpj></CpfCnpj>
+            <RazaoSocial>Software House Exemplo Ltda</RazaoSocial>
+          </Prestador>
+          <TomadorServico>
+            <IdentificacaoTomador><CpfCnpj><Cnpj>00999888000177</Cnpj></CpfCnpj></IdentificacaoTomador>
+            <RazaoSocial>Cliente Serviços SA</RazaoSocial>
+          </TomadorServico>
+        </InfDeclaracaoPrestacaoServico>
+      </DeclaracaoPrestacaoServico>
+    </InfNfse>
+  </Nfse>
+</CompNfse>
